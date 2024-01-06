@@ -38,3 +38,15 @@ export default function Membrane() {
 //category: "Architecture"
 //size: "l"
 //tag: "good,nice"
+const projects = [
+  {
+    id: 1,
+    name: 'Membrance',
+    href: '/projects/071009-membrane#',
+    Date: 'xyz',
+    imageSrc: '/thumbnail/20_wildwood_thumb_zimarc.png',
+    imageAlt: 'tensile membrane structures architecture by zimarc ',
+  },
+
+  // More products...
+]

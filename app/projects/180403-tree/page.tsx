@@ -1,5 +1,16 @@
 import Image from 'next/image';
+const projects = [
+  {
+    id: 1,
+    name: 'Wildwood',
+    href: '/projects/071009-membrane#',
+    Date: 'xyz',
+    imageSrc: '/thumbnail/20_wildwood_thumb_zimarc.png',
+    imageAlt: 'tensile membrane structures architecture by zimarc ',
+  },
 
+  // More products...
+]
 
 // Create a function to import all images from a specific directory
 function importAll(r) {
@@ -11,10 +22,10 @@ const images = importAll(require.context('./img/', false, /\.(png|jpe?g|svg)$/))
 // Now, 'images' is an array containing the imported images
 
 
-export default function Membrane() {
+export default function project() {
   return (
     <div style={{ padding: '50px'}}>
-      <h1>Membrane</h1>
+      <h1 className="mt-1 text-sm text-gray-700 uppercase">wildwood</h1>
 
       {/* Loop through all images and render each one */}
       {images.map((image, index) => (
@@ -38,15 +49,3 @@ export default function Membrane() {
 //category: "Architecture"
 //size: "l"
 //tag: "good,nice"
-const projects = [
-  {
-    id: 1,
-    name: 'Membrance',
-    href: '/projects/071009-membrane#',
-    Date: 'xyz',
-    imageSrc: '/thumbnail/20_wildwood_thumb_zimarc.png',
-    imageAlt: 'tensile membrane structures architecture by zimarc ',
-  },
-
-  // More products...
-]
